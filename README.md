@@ -2,7 +2,7 @@
 
 This document provides a comparison between hosted, serverless (no cost or management to spin down to zero) providers of SQL cloud databases.
 
-PlanetScale has been removed due to their user hostile pricing changes.
+PlanetScale has been removed due to their user hostile pricing changes. Render has been removed since their free plan is disabled after 30 days. 
 
 Please join our [discussions](https://github.com/hbmartin/comparison-serverless-cloud-sql-databases/discussions) or fix/update information by [editing this doc](https://github.com/hbmartin/comparison-serverless-cloud-sql-databases/edit/main/README.md)!
 
@@ -25,8 +25,6 @@ See also the [Python FaaS Comparison](https://github.com/hbmartin/comparison-hos
 | **LiteFS**        | SQLite           | GA (v0) | Fly.io | N/A | ✅ | [Link](https://fly.io/docs/litefs/speedrun/) | 🚀 |
 | **MotherDuck**             | DuckDB           |        |        |        |        |      |      |
 | **Neon**                   | PostgreSQL | GA |        |        |        |      |      |
-| **PlanetScale** | MySQL | GA |        |        |        |      |  |
-| **Render** | PostgreSQL | | | | | | |
 | **Supabase** | PostgreSQL | | | Pool / HTTP | | | |
 | **Turso**                  | SQLite           | GA | ? | Embed + HTTP | ✅ | [Link](https://github.com/tursodatabase/awesome-turso) | 🚀 |
 | **Xata**                   | PostgreSQL | Early |        |        |        |      |      |
@@ -44,12 +42,12 @@ Note that the "Free Plan" is intended to represent ongoing free resources i.e. n
 | **Fauna**                      | 100k TRO + 50k TWO + 500k TCO + 1GB storage + 5 DB + 2 GB / mo egress (@ 1k TRO/s + 250 TWO/s + 1k TCO/s) | ?           | $0.46/M TRO + $2.28/M TWO +  $2.05/M TCO + $1.00/GB/mo storage + $0.20/GB/mo egress (over 10GB) |
 | **LiteFS (Fly.io)**            | 3 GB storage (including VM) + 160 GB egress (per ?)          | ?           | $0.15 per GB / mo + $0.02 per GB egress (over free, min $5 / mo) + optional $0.50/GB / mo for backups |
 | **MotherDuck**                 |                                                              |             |                                                              |
-| **Neon**                       |                                                              |             |                                                              |
-| **PlanetScale**                |                                                              |             |                                                              |
+| **Neon**                       | 500 MB, 190 CPU hours                                        |             | $20 (10 GB, 300 CPU hours)                                   |
+| **Supabase**                   | 500 MB, 5GB bw                                               |             | $25 (8GB, 250 GB bw) + $0.125 / GB + $0.09 / GB bw           |
 | **Turso**                      | 500 DBs, 9 GB, 1B row reads                                  |             | 10k DBs, 24 GB                                               |
-| **Xata**                       | 10 DBs, 15 GB                                                |             | 15 GB + $2 / GB                                              |
+| **Xata**                       | 15 GB                                                        |             | $20 (15 GB) + $2 / GB                                        |
 
-RUs = CPU + IOPs, mo = month, M = million, k = thousand, RR = rows read, RW = rows written, B = billion
+RUs = CPU + IOPs, mo = month, M = million, k = thousand, RR = rows read, RW = rows written, B = billion, bw = bandwidth
 
 ## Runtime Limits
 
@@ -64,8 +62,6 @@ RUs = CPU + IOPs, mo = month, M = million, k = thousand, RR = rows read, RW = ro
 | **LiteFS**                     |                    |                |                    |                |                                      |
 | **MotherDuck**                 |                    |                |                    |                |                                      |
 | **Neon**                       |                    |                |                    |                |                                      |
-| **PlanetScale**                |                    |                |                    |                |                                      |
-| **Render**                     |                    |                |                    |                |                                      |
 | **Supabase**                   |                    |                |                    |                |                                      |
 | **Turso**                      | 9 GB               | 24 GB          | 500                | 10k            |                                      |
 | **Xata**                       |                    | Early          |                    |                |                                      |
@@ -82,7 +78,6 @@ RUs = CPU + IOPs, mo = month, M = million, k = thousand, RR = rows read, RW = ro
 | **LiteFS (Fly.io)**            |      | [Fly.io Forum](https://community.fly.io/)                    | [LiteFS](https://github.com/superfly/litefs)                 |                                                              |                                                        |
 | **MotherDuck**                 |      |                                                              |                                                              |                                                              |                                                        |
 | **Neon**                       |      |                                                              |                                                              |                                                              |                                                        |
-| **PlanetScale**                |      |                                                              |                                                              |                                                              |                                                        |
 | **Turso**                      |      | [Discord](https://discord.com/invite/turso)                  | [GitHub](https://github.com/tursodatabase)                   | [SO](https://stackoverflow.com/questions/tagged/turso)       |                                                        |
 | **Xata**                       |      |                                                              |                                                              |                                                              |                                                        |
 

@@ -47,7 +47,7 @@ Note that the "Free Plan" is intended to represent ongoing free resources i.e. n
 | **Neon**                       |                                                              |             |                                                              |
 | **PlanetScale**                |                                                              |             |                                                              |
 | **Turso**                      | 500 DBs, 9 GB, 1B row reads                                  |             | 10k DBs, 24 GB                                               |
-| **Xata**                       |                                                              |             |                                                              |
+| **Xata**                       | 10 DBs, 15 GB                                                |             | 15 GB + $2 / GB                                              |
 
 RUs = CPU + IOPs, mo = month, M = million, k = thousand, RR = rows read, RW = rows written, B = billion
 

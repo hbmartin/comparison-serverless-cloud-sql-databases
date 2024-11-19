@@ -26,6 +26,7 @@ See also the [Python FaaS Comparison](https://github.com/hbmartin/comparison-hos
 | **MotherDuck**             | DuckDB           |        |        |        |        |      |      |
 | **Neon**                   | PostgreSQL | GA |        |        |        |      |      |
 | **Supabase** | PostgreSQL | | | Pool / HTTP | | | |
+| **Tembo** | PostgreSQL | | |  | | | |
 | **Turso**                  | SQLite           | GA | ? | Embed + HTTP | ✅ | [Link](https://github.com/tursodatabase/awesome-turso) | 🚀 |
 | **Xata**                   | PostgreSQL | Early |        |        |        |      |      |
 
@@ -44,6 +45,7 @@ Note that the "Free Plan" is intended to represent ongoing free resources i.e. n
 | **MotherDuck**                 |                                                              |             |                                                              |
 | **Neon**                       | 500 MB, 190 CPU hours                                        |             | $20 (10 GB, 300 CPU hours)                                   |
 | **Supabase**                   | 500 MB, 5GB bw                                               |             | $25 (8GB, 250 GB bw) + $0.125 / GB + $0.09 / GB bw           |
+| **Tembo**                      | 10 GB, 0.25 vCPU, 1 GB Memory                                |             | $33 (0.5 vCPU · 1Gi)                                         |
 | **Turso**                      | 500 DBs, 9 GB, 1B row reads                                  |             | 10k DBs, 24 GB                                               |
 | **Xata**                       | 15 GB                                                        |             | $20 (15 GB) + $2 / GB                                        |
 

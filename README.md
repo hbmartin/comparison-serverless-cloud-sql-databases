@@ -1,4 +1,4 @@
-# Comparing hosts / providers for serverless cloud functions (FaaS) for Python
+# Comparing hosts for serverless cloud SQL databases
 
 This document provides a comparison between hosted, serverless (no cost or management to spin down to zero) providers of SQL cloud databases.
 

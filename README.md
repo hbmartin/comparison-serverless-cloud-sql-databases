@@ -2,7 +2,7 @@
 
 This document provides a comparison between hosted, serverless (no cost or management to spin down to zero) providers of SQL cloud databases.
 
-PlanetScale has been removed due to their user hostile pricing changes. Render has been removed since their free plan is disabled after 30 days. 
+PlanetScale has been removed due to their user hostile pricing changes. Render has been removed since their free plan is disabled after 30 days.
 
 Please join our [discussions](https://github.com/hbmartin/comparison-serverless-cloud-sql-databases/discussions) or fix/update information by [editing this doc](https://github.com/hbmartin/comparison-serverless-cloud-sql-databases/edit/main/README.md)!
 

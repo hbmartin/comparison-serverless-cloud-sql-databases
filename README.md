@@ -26,6 +26,7 @@ See also the [Python FaaS Comparison](https://github.com/hbmartin/comparison-hos
 | **LiteFS**        | SQLite           | GA (v0) | Fly.io | N/A | ✅ | [Link](https://fly.io/docs/litefs/speedrun/) | 🚀 |
 | **MotherDuck**             | DuckDB           |        |        |        |        |      |      |
 | **Neon**                   | PostgreSQL | GA |        |        |        |      |      |
+| **Prisma** | PostgreSQL | GA | Vultr | | ✅ | [Link](https://github.com/prisma/prisma-examples) | 🚀 |
 | **Supabase** | PostgreSQL | | | Pool / HTTP | | | |
 | **Tembo** | PostgreSQL | | |  | | | |
 | **Turso**                  | SQLite           | GA | ? | Embed + HTTP | ✅ | [Link](https://github.com/tursodatabase/awesome-turso) | 🚀 |
@@ -46,6 +47,7 @@ Note that the "Free Plan" is intended to represent ongoing free resources i.e. n
 | **LiteFS (Fly.io)**            | 3 GB storage (including VM) + 160 GB egress (per ?)          | ?           | $0.15 per GB / mo + $0.02 per GB egress (over free, min $5 / mo) + optional $0.50/GB / mo for backups |
 | **MotherDuck**                 |                                                              |             |                                                              |
 | **Neon**                       | 500 MB, 190 CPU hours                                        |             | $20 (10 GB, 300 CPU hours)                                   |
+| Prisma                         | 1 GB storage, 100k ops, 5MB response, 10s duration           | Yes         | 5 GB storage (+ $1.5 / GB), 100k ops (+ $8 / M), 10 MB response, 20s durtration |
 | **Supabase**                   | 500 MB, 5GB bw, 50k MAU                                      |             | $25 (8GB, 250 GB bw) + $0.125 / GB + $0.09 / GB bw           |
 | **Tembo**                      | 10 GB storage, 0.25 vCPU, 1 GB Memory                        |             | $33 (0.5 vCPU · 1Gi mem, 10 Gi storage)                      |
 | **Turso**                      | 500 DBs, 9 GB, 1B row reads                                  |             | 10k DBs, 24 GB                                               |
@@ -66,6 +68,7 @@ RUs = CPU + IOPs, mo = month, M = million, k = thousand, RR = rows read, RW = ro
 | **LiteFS**                     |                    |                |                    |                |                                      |
 | **MotherDuck**                 |                    |                |                    |                |                                      |
 | **Neon**                       |                    |                |                    |                |                                      |
+| **Prisma**                     |                    |                | 10                 | 60             | See above                            |
 | **Supabase**                   |                    |                |                    |                |                                      |
 | **Turso**                      | 9 GB               | 24 GB          | 500                | 10k            |                                      |
 | **Xata**                       |                    | Early          |                    |                |                                      |
@@ -82,6 +85,7 @@ RUs = CPU + IOPs, mo = month, M = million, k = thousand, RR = rows read, RW = ro
 | **LiteFS (Fly.io)**            |      | [Fly.io Forum](https://community.fly.io/)                    | [LiteFS](https://github.com/superfly/litefs)                 |                                                              |                                                        |
 | **MotherDuck**                 |      |                                                              |                                                              |                                                              |                                                        |
 | **Neon**                       |      |                                                              |                                                              |                                                              |                                                        |
+| **Prisma**                     |      |                                                              |                                                              |                                                              |                                                        |
 | **Turso**                      |      | [Discord](https://discord.com/invite/turso)                  | [GitHub](https://github.com/tursodatabase)                   | [SO](https://stackoverflow.com/questions/tagged/turso)       |                                                        |
 | **Xata**                       |      |                                                              |                                                              |                                                              |                                                        |
 

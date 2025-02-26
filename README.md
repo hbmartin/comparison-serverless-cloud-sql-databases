@@ -21,7 +21,7 @@ See also the [Python FaaS Comparison](https://github.com/hbmartin/comparison-hos
 | **Azure SQL Serverless** |  | GA | Azure |  |  | | |
 | **CockroachDB** | [Postgres compat.](https://www.cockroachlabs.com/docs/stable/postgresql-compatibility) | GA | AWS / GCP | Pool | ✅ | [Link](https://www.cockroachlabs.com/docs/stable/example-apps) | 🚀 |
 | **D1 (Cloudflare)** | SQLite           | GA | Cloudflare | HTTP | 🚫 | [Link](https://developers.cloudflare.com/d1/get-started/) | 🚀 |
-| **EdgeDB** | PosgreSQL + |  | AWS |  |  |  |  |
+| **Gel** | PosgreSQL + EdgeQL |  | AWS |  |  |  |  |
 | **Fauna** | FQL | GA | ? | HTTP | 🚫 | [Link](https://docs.fauna.com/fauna/current/guides/todo) | 👍 |
 | **LiteFS**        | SQLite           | GA (v0) | Fly.io | N/A | ✅ | [Link](https://fly.io/docs/litefs/speedrun/) | 🚀 |
 | **MotherDuck**             | DuckDB           |        |        |        |        |      |      |
@@ -42,12 +42,12 @@ Note that the "Free Plan" is intended to represent ongoing free resources i.e. n
 | **Azure SQL Serverless**       |                                                              |             |                                                              |
 | **CockroachDB**                | 10 GiB + 50M RUs / mo.                                       | Yes         | $0.50 / GiB + $0.20 / 1M RUs (over free)                     |
 | **D1 (Cloudflare)**            | 5M RR / day + 100k RW / day + 5 GB                           |             | $5 / mo for 25B RR + 50M RW + 5GB, after $0.001 / M RR + $1.00 / M RW + $0.75 / GB-mo |
-| **EdgeDB**                     | 1/16 vCPU, 1/2 GiB RAM, 1GB storage                          |             | $39 / mo for 1/4 vCPU, 2 GiB RAM, 10GiB storage, 100GiB transfer |
+| **Gel**                        | 1/16 vCPU, 1/2 GiB RAM, 1GB storage                          |             | $20 / mo for 1/8 vCPU, 1 GiB RAM, 10GiB storage, 100GiB transfer |
 | **Fauna**                      | 100k TRO + 50k TWO + 500k TCO + 1GB storage + 5 DB + 2 GB / mo egress (@ 1k TRO/s + 250 TWO/s + 1k TCO/s) | ?           | $0.46/M TRO + $2.28/M TWO +  $2.05/M TCO + $1.00/GB/mo storage + $0.20/GB/mo egress (over 10GB) |
 | **LiteFS (Fly.io)**            | 3 GB storage (including VM) + 160 GB egress (per ?)          | ?           | $0.15 per GB / mo + $0.02 per GB egress (over free, min $5 / mo) + optional $0.50/GB / mo for backups |
 | **MotherDuck**                 |                                                              |             |                                                              |
 | **Neon**                       | 500 MB, 190 CPU hours                                        |             | $20 (10 GB, 300 CPU hours)                                   |
-| Prisma                         | 1 GB storage, 100k ops, 5MB response, 10s duration           | Yes         | 5 GB storage (+ $1.5 / GB), 100k ops (+ $8 / M), 10 MB response, 20s durtration |
+| **Prisma**                     | 1 GB storage, 100k ops, 5MB response, 10s duration           | Yes         | 5 GB storage (+ $1.5 / GB), 100k ops (+ $8 / M), 10 MB response, 20s durtration |
 | **Supabase**                   | 500 MB, 5GB bw, 50k MAU                                      |             | $25 (8GB, 250 GB bw) + $0.125 / GB + $0.09 / GB bw           |
 | **Tembo**                      | 10 GB storage, 0.25 vCPU, 1 GB Memory                        |             | $33 (0.5 vCPU · 1Gi mem, 10 Gi storage)                      |
 | **Turso**                      | 500 DBs, 9 GB, 1B row reads                                  |             | 10k DBs, 24 GB                                               |
@@ -82,6 +82,7 @@ RUs = CPU + IOPs, mo = month, M = million, k = thousand, RR = rows read, RW = ro
 | **CockroachDB**                |      | [Forum](https://forum.cockroachlabs.com/) [Slack](https://cockroa.ch/slack) | [GitHub](https://github.com/cockroachdb/cockroach)           | [SO](https://stackoverflow.com/questions/tagged/cockroachdb) | [r/CockroachDB](https://www.reddit.com/r/CockroachDB/) |
 | **D1 (Cloudflare)**            |      | [Forum](https://community.cloudflare.com/) [Discord](https://discord.com/invite/cloudflaredev) | [Projects](https://developers.cloudflare.com/d1/reference/community-projects/) | [SO](https://stackoverflow.com/questions/tagged/cloudflare-workers) | [r/CloudFlare](https://www.reddit.com/r/CloudFlare/)   |
 | **Fauna**                      |      | [Forum](https://forums.fauna.com/) [Discord](https://discord.com/invite/NHwJFdG2B2) | [Drivers](https://github.com/fauna)                          | [SO](https://stackoverflow.com/questions/tagged/faunadb)     | [r/FaunaDB](https://www.reddit.com/r/FaunaDB/)         |
+| **Gel**                        |      |                                                              |                                                              |                                                              |                                                        |
 | **LiteFS (Fly.io)**            |      | [Fly.io Forum](https://community.fly.io/)                    | [LiteFS](https://github.com/superfly/litefs)                 |                                                              |                                                        |
 | **MotherDuck**                 |      |                                                              |                                                              |                                                              |                                                        |
 | **Neon**                       |      |                                                              |                                                              |                                                              |                                                        |

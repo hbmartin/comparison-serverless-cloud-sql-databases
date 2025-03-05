@@ -28,6 +28,7 @@ See also the [Python FaaS Comparison](https://github.com/hbmartin/comparison-hos
 | **Neon**                   | PostgreSQL | GA |        |        |        |      |      |
 | **Prisma** | PostgreSQL | GA | Vultr | | ✅ | [Link](https://github.com/prisma/prisma-examples) | 🚀 |
 | **Supabase** | PostgreSQL | | | Pool / HTTP | | | |
+| **SurrealDB** | SurrealQL (PSQL-ish) | | |  | ✅ | [Link](https://github.com/surrealdb/examples) | 🚀 |
 | **Tembo** | PostgreSQL | | |  | | | |
 | **Turso**                  | SQLite           | GA | ? | Embed + HTTP | ✅ | [Link](https://github.com/tursodatabase/awesome-turso) | 🚀 |
 | **Xata**                   | PostgreSQL | Early |        |        |        |      |      |
@@ -49,6 +50,7 @@ Note that the "Free Plan" is intended to represent ongoing free resources i.e. n
 | **Neon**                       | 500 MB, 190 CPU hours                                        |             | $20 (10 GB, 300 CPU hours)                                   |
 | **Prisma**                     | 1 GB storage, 100k ops, 5MB response, 10s duration           | Yes         | 5 GB storage (+ $1.5 / GB), 100k ops (+ $8 / M), 10 MB response, 20s durtration |
 | **Supabase**                   | 500 MB, 5GB bw, 50k MAU                                      |             | $25 (8GB, 250 GB bw) + $0.125 / GB + $0.09 / GB bw           |
+| **SurrealDB**                  | 1 GB storage Limited compute node size                       |             |                                                              |
 | **Tembo**                      | 10 GB storage, 0.25 vCPU, 1 GB Memory                        |             | $33 (0.5 vCPU · 1Gi mem, 10 Gi storage)                      |
 | **Turso**                      | 500 DBs, 9 GB, 1B row reads                                  |             | 10k DBs, 24 GB                                               |
 | **Xata**                       | 15 GB                                                        |             | $20 (15 GB) + $2 / GB                                        |

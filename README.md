@@ -40,24 +40,24 @@ See also the [Authentication Providers Comparison](https://github.com/hbmartin/c
 
 Note that the "Free Plan" is intended to represent ongoing free resources i.e. not trials or sign-up credits.
 
-|                                | **Free Plan**                                                | Bill Limits | **First Paid Tier**                                          |
-| ------------------------------ | ------------------------------------------------------------ | ----------- | ------------------------------------------------------------ |
-| **Aurora Serverless v2 (AWS)** |                                                              |             |                                                              |
-| **Azure SQL Serverless**       |                                                              |             |                                                              |
-| **CockroachDB**                | 10 GiB + 50M RUs / mo.                                       | Yes         | $0.50 / GiB + $0.20 / 1M RUs (over free)                     |
-| **D1 (Cloudflare)**            | 5M RR / day + 100k RW / day + 5 GB                           |             | $5 / mo for 25B RR + 50M RW + 5GB, after $0.001 / M RR + $1.00 / M RW + $0.75 / GB-mo |
-| **Gel**                        | 1/16 vCPU, 1/2 GiB RAM, 1GB storage                          |             | $20 / mo for 1/8 vCPU, 1 GiB RAM, 10GiB storage, 100GiB transfer |
-| **Fauna**                      | 100k TRO + 50k TWO + 500k TCO + 1GB storage + 5 DB + 2 GB / mo egress (@ 1k TRO/s + 250 TWO/s + 1k TCO/s) | ?           | $0.46/M TRO + $2.28/M TWO +  $2.05/M TCO + $1.00/GB/mo storage + $0.20/GB/mo egress (over 10GB) |
-| **LiteFS (Fly.io)**            | 3 GB storage (including VM) + 160 GB egress (per ?)          | ?           | $0.15 per GB / mo + $0.02 per GB egress (over free, min $5 / mo) + optional $0.50/GB / mo for backups |
-| **MotherDuck**                 |                                                              |             |                                                              |
-| **Neon**                       | 500 MB, 190 CPU hours                                        |             | $20 (10 GB, 300 CPU hours)                                   |
-| **Nhost**                      | 1 GB storage, 5 GB egress                                    |             | $25/mo = 10 GB storage, 50 GB egress, + $0.20 per GB add'l storage) |
-| **Prisma**                     | 1 GB storage, 100k ops, 5MB response, 10s duration           | Yes         | 5 GB storage (+ $1.5 / GB), 100k ops (+ $8 / M), 10 MB response, 20s durtration |
-| **Supabase**                   | 500 MB, 5GB bw, 50k MAU                                      |             | $25 (8GB, 250 GB bw) + $0.125 / GB + $0.09 / GB bw           |
-| **SurrealDB**                  | 1 GB storage Limited compute node size                       |             |                                                              |
-| **Tembo**                      | 10 GB storage, 0.25 vCPU, 1 GB Memory                        |             | $33 (0.5 vCPU · 1Gi mem, 10 Gi storage)                      |
-| **Turso**                      | 500 DBs, 9 GB, 1B row reads                                  |             | 10k DBs, 24 GB                                               |
-| **Xata**                       | 15 GB                                                        |             | $20 (15 GB) + $2 / GB                                        |
+|                                              | **Free Plan**                                                | Bill Limits | **First Paid Tier**                                          |
+| -------------------------------------------- | ------------------------------------------------------------ | ----------- | ------------------------------------------------------------ |
+| **Aurora Serverless v2 (AWS)**               |                                                              |             |                                                              |
+| **Azure SQL Serverless**                     |                                                              |             |                                                              |
+| **CockroachDB**                              | 10 GiB + 50M RUs / mo.                                       | Yes         | $0.50 / GiB + $0.20 / 1M RUs (over free)                     |
+| **D1 (Cloudflare)**                          | 5M RR / day + 100k RW / day + 5 GB                           |             | $5 / mo for 25B RR + 50M RW + 5GB, after $0.001 / M RR + $1.00 / M RW + $0.75 / GB-mo |
+| **Gel**                                      | 1/16 vCPU, 1/2 GiB RAM, 1GB storage                          |             | $20 / mo for 1/8 vCPU, 1 GiB RAM, 10GiB storage, 100GiB transfer |
+| **Fauna**                                    | 100k TRO + 50k TWO + 500k TCO + 1GB storage + 5 DB + 2 GB / mo egress (@ 1k TRO/s + 250 TWO/s + 1k TCO/s) | ?           | $0.46/M TRO + $2.28/M TWO +  $2.05/M TCO + $1.00/GB/mo storage + $0.20/GB/mo egress (over 10GB) |
+| **LiteFS (Fly.io)**                          | 3 GB storage (including VM) + 160 GB egress (per ?)          | ?           | $0.15 per GB / mo + $0.02 per GB egress (over free, min $5 / mo) + optional $0.50/GB / mo for backups |
+| **MotherDuck**                               |                                                              |             |                                                              |
+| **[Neon](https://neon.tech/pricing)**        | 500 MB, 190 CPU hours                                        |             | $20 / mo = 10 GB, 300 CPU hours                              |
+| **[Nhost](https://nhost.io/pricing)**        | 1 GB storage, 5 GB egress                                    |             | $25/mo = 10 GB storage, 50 GB egress + $0.20 / GB add'l storage |
+| **[Prisma](https://www.prisma.io/pricing)**  | 1 GB storage, 100k ops, 5MB response, 10s duration           | Yes         | $50/mo = 5 GB storage (+ $1.5 / GB), 100k ops (+ $8 / M), 10 MB response, 20s durtration |
+| **[Supabase](https://supabase.com/pricing)** | 500 MB, 5GB bw, 50k MAU                                      |             | $25 / mo =  8GB storage, 250 GB bw + $0.125 / GB + $0.09 / GB bw |
+| **SurrealDB**                                | 1 GB storage Limited compute node size                       |             |                                                              |
+| **[Tembo](https://tembo.io/pricing/)**       | 10 GB storage, 0.25 vCPU, 1 GB Memory                        |             | $33/mo = 0.5 vCPU · 1Gi mem, 10 Gi storage                   |
+| **Turso**                                    | 500 DBs, 9 GB, 1B row reads                                  |             | 10k DBs, 24 GB                                               |
+| **[Xata](https://xata.io/pricing)**          | 15 GB storage                                                |             | $20/mo =  15 GB storage + $2 / GB                            |
 
 RUs = CPU + IOPs, mo = month, M = million, k = thousand, RR = rows read, RW = rows written, B = billion, bw = bandwidth
 
@@ -106,3 +106,4 @@ RUs = CPU + IOPs, mo = month, M = million, k = thousand, RR = rows read, RW = ro
 - [Article by Jignesh Solanki from Dec 12, 2021](https://www.simform.com/blog/serverless-databases/)
 - [Article by Alex DeBrie from June 20, 2019](https://www.serverless.com/blog/choosing-a-database-with-serverless)
 - [7+ Free PostgreSQL Hosting Platforms by Probir Sarkar from Nov 6, 2024](https://dev.to/probir-sarkar/7-free-postgresql-hosting-platforms-for-developers-in-2024-fi5)
+- [Serverless Database Query Performance](https://bejamas.com/compare/neon-vs-supabase-vs-xata)

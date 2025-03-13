@@ -8,6 +8,8 @@ Please join our [discussions](https://github.com/hbmartin/comparison-serverless-
 
 See also the [Python FaaS Comparison](https://github.com/hbmartin/comparison-hosts-serverless-cloud-function-faas-for-python)
 
+See also the [Authentication Providers Comparison](https://github.com/hbmartin/comparison-web-app-authentication-providers?tab=readme-ov-file)
+
 - [DevEx](#devex)
 - [Pricing](#pricing)
 - [Runtime Limits](#runtime-limits)
@@ -15,23 +17,24 @@ See also the [Python FaaS Comparison](https://github.com/hbmartin/comparison-hos
 
 ## DevEx
 
-|                                       | Dialect | Status    | Cloud | Cnxn | OSS | Examples         | Docs |
-| ------------------------------------- | -------------- | --------- | ------------------------------- | ---- | ------------------------------------- | ------------------------------------- | ------------------------------------- |
-| **Aurora Serverless v2 (AWS)** | PostgreSQL / MySQL | GA | AWS |  |  |      |      |
-| **Azure SQL Serverless** |  | GA | Azure |  |  | | |
-| **CockroachDB** | [Postgres compat.](https://www.cockroachlabs.com/docs/stable/postgresql-compatibility) | GA | AWS / GCP | Pool | ✅ | [Link](https://www.cockroachlabs.com/docs/stable/example-apps) | 🚀 |
-| **D1 (Cloudflare)** | SQLite           | GA | Cloudflare | HTTP | 🚫 | [Link](https://developers.cloudflare.com/d1/get-started/) | 🚀 |
-| **Gel** | PosgreSQL + EdgeQL |  | AWS |  |  |  |  |
-| **Fauna** | FQL | GA | ? | HTTP | 🚫 | [Link](https://docs.fauna.com/fauna/current/guides/todo) | 👍 |
-| **LiteFS**        | SQLite           | GA (v0) | Fly.io | N/A | ✅ | [Link](https://fly.io/docs/litefs/speedrun/) | 🚀 |
-| **MotherDuck**             | DuckDB           |        |        |        |        |      |      |
-| **Neon**                   | PostgreSQL | GA |        |        |        |      |      |
-| **Prisma** | PostgreSQL | GA | Vultr | | ✅ | [Link](https://github.com/prisma/prisma-examples) | 🚀 |
-| **Supabase** | PostgreSQL | | | Pool / HTTP | | | |
-| **SurrealDB** | SurrealQL (PSQL-ish) | | |  | ✅ | [Link](https://github.com/surrealdb/examples) | 🚀 |
-| **Tembo** | PostgreSQL | | |  | | | |
-| **Turso**                  | SQLite           | GA | ? | Embed + HTTP | ✅ | [Link](https://github.com/tursodatabase/awesome-turso) | 🚀 |
-| **Xata**                   | PostgreSQL | Early |        |        |        |      |      |
+|                                | Dialect                                                      | Status  | Cloud      | Cnxn         | OSS  | Examples                                                     | Docs |
+| ------------------------------ | ------------------------------------------------------------ | ------- | ---------- | ------------ | ---- | ------------------------------------------------------------ | ---- |
+| **Aurora Serverless v2 (AWS)** | PostgreSQL / MySQL                                           | GA      | AWS        |              |      |                                                              |      |
+| **Azure SQL Serverless**       |                                                              | GA      | Azure      |              |      |                                                              |      |
+| **CockroachDB**                | [Postgres compat.](https://www.cockroachlabs.com/docs/stable/postgresql-compatibility) | GA      | AWS / GCP  | Pool         | ✅    | [Link](https://www.cockroachlabs.com/docs/stable/example-apps) | 🚀    |
+| **D1 (Cloudflare)**            | SQLite                                                       | GA      | Cloudflare | HTTP         | 🚫    | [Link](https://developers.cloudflare.com/d1/get-started/)    | 🚀    |
+| **Gel**                        | PosgreSQL + EdgeQL                                           | Early   | AWS        |              |      |                                                              |      |
+| **Fauna**                      | FQL                                                          | GA      | ?          | HTTP         | 🚫    | [Link](https://docs.fauna.com/fauna/current/guides/todo)     | 👍    |
+| **LiteFS**                     | SQLite                                                       | GA (v0) | Fly.io     | N/A          | ✅    | [Link](https://fly.io/docs/litefs/speedrun/)                 | 🚀    |
+| **MotherDuck**                 | DuckDB                                                       |         |            |              |      |                                                              |      |
+| **Neon**                       | PostgreSQL                                                   | GA      |            |              |      |                                                              |      |
+| **Nhost**                      | PostgreSQL + GQL                                             | GA      |            |              |      |                                                              | 👍    |
+| **Prisma**                     | PostgreSQL                                                   | GA      | Vultr      |              | ✅    | [Link](https://github.com/prisma/prisma-examples)            | 🚀    |
+| **Supabase**                   | PostgreSQL                                                   |         |            | Pool / HTTP  |      |                                                              |      |
+| **SurrealDB**                  | SurrealQL (PSQL-ish)                                         |         |            |              | ✅    | [Link](https://github.com/surrealdb/examples)                | 🚀    |
+| **Tembo**                      | PostgreSQL                                                   |         |            |              |      |                                                              |      |
+| **Turso**                      | SQLite                                                       | GA      | ?          | Embed + HTTP | ✅    | [Link](https://github.com/tursodatabase/awesome-turso)       | 🚀    |
+| **Xata**                       | PostgreSQL                                                   | Early   |            |              |      |                                                              |      |
 
 ## Pricing
 
@@ -48,6 +51,7 @@ Note that the "Free Plan" is intended to represent ongoing free resources i.e. n
 | **LiteFS (Fly.io)**            | 3 GB storage (including VM) + 160 GB egress (per ?)          | ?           | $0.15 per GB / mo + $0.02 per GB egress (over free, min $5 / mo) + optional $0.50/GB / mo for backups |
 | **MotherDuck**                 |                                                              |             |                                                              |
 | **Neon**                       | 500 MB, 190 CPU hours                                        |             | $20 (10 GB, 300 CPU hours)                                   |
+| **Nhost**                      | 1 GB storage, 5 GB egress                                    |             | $25/mo = 10 GB storage, 50 GB egress, + $0.20 per GB add'l storage) |
 | **Prisma**                     | 1 GB storage, 100k ops, 5MB response, 10s duration           | Yes         | 5 GB storage (+ $1.5 / GB), 100k ops (+ $8 / M), 10 MB response, 20s durtration |
 | **Supabase**                   | 500 MB, 5GB bw, 50k MAU                                      |             | $25 (8GB, 250 GB bw) + $0.125 / GB + $0.09 / GB bw           |
 | **SurrealDB**                  | 1 GB storage Limited compute node size                       |             |                                                              |
@@ -70,6 +74,7 @@ RUs = CPU + IOPs, mo = month, M = million, k = thousand, RR = rows read, RW = ro
 | **LiteFS**                     |                    |                |                    |                |                                      |
 | **MotherDuck**                 |                    |                |                    |                |                                      |
 | **Neon**                       |                    |                |                    |                |                                      |
+| **Nhost**                      |                    |                |                    |                |                                      |
 | **Prisma**                     |                    |                | 10                 | 60             | See above                            |
 | **Supabase**                   |                    |                |                    |                |                                      |
 | **Turso**                      | 9 GB               | 24 GB          | 500                | 10k            |                                      |

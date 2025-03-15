@@ -28,6 +28,7 @@ See also the [Authentication Providers Comparison](https://github.com/hbmartin/c
 | **LiteFS**                     | SQLite                                                       | GA (v0) | Fly.io     | N/A          | ✅    | [Link](https://fly.io/docs/litefs/speedrun/)                 | 🚀    |
 | **MotherDuck**                 | DuckDB                                                       |         |            |              |      |                                                              |      |
 | **Neon**                       | PostgreSQL                                                   | GA      |            |              |      |                                                              |      |
+| **Nile**                       | PostgreSQL                                                   | Early   |            | Pool         |      | [Link](https://github.com/niledatabase/niledatabase/tree/main/examples) | 👍    |
 | **Nhost**                      | PostgreSQL + GQL                                             | GA      |            |              |      |                                                              | 👍    |
 | **Prisma**                     | PostgreSQL                                                   | GA      | Vultr      |              | ✅    | [Link](https://github.com/prisma/prisma-examples)            | 🚀    |
 | **Supabase**                   | PostgreSQL                                                   |         |            | Pool / HTTP  |      |                                                              |      |
@@ -51,6 +52,7 @@ Note that the "Free Plan" is intended to represent ongoing free resources i.e. n
 | **LiteFS (Fly.io)**                          | 3 GB storage (including VM) + 160 GB egress (per ?)          | ?           | $0.15 per GB / mo + $0.02 per GB egress (over free, min $5 / mo) + optional $0.50/GB / mo for backups |
 | **MotherDuck**                               |                                                              |             |                                                              |
 | **[Neon](https://neon.tech/pricing)**        | 500 MB, 190 CPU hours                                        |             | $20 / mo = 10 GB, 300 CPU hours                              |
+| **[Nile](https://www.thenile.dev/pricing)**  | 1GB storage, 50M query tokens                                |             | $15 / mo = 5GB storage, 150M query tokens                    |
 | **[Nhost](https://nhost.io/pricing)**        | 1 GB storage, 5 GB egress                                    |             | $25/mo = 10 GB storage, 50 GB egress + $0.20 / GB add'l storage |
 | **[Prisma](https://www.prisma.io/pricing)**  | 1 GB storage, 100k ops, 5MB response, 10s duration           | Yes         | $50/mo = 5 GB storage (+ $1.5 / GB), 100k ops (+ $8 / M), 10 MB response, 20s durtration |
 | **[Supabase](https://supabase.com/pricing)** | 500 MB, 5GB bw, 50k MAU                                      |             | $25 / mo =  8GB storage, 250 GB bw + $0.125 / GB + $0.09 / GB bw |

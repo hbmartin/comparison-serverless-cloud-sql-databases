@@ -17,25 +17,26 @@ See also the [Authentication Providers Comparison](https://github.com/hbmartin/c
 
 ## DevEx
 
-|                                | Dialect                                                      | Status  | Cloud      | Cnxn         | OSS  | Examples                                                     | Docs |
-| ------------------------------ | ------------------------------------------------------------ | ------- | ---------- | ------------ | ---- | ------------------------------------------------------------ | ---- |
-| **Aurora Serverless v2 (AWS)** | PostgreSQL / MySQL                                           | GA      | AWS        |              |      |                                                              |      |
-| **Azure SQL Serverless**       |                                                              | GA      | Azure      |              |      |                                                              |      |
-| **CockroachDB**                | [Postgres compat.](https://www.cockroachlabs.com/docs/stable/postgresql-compatibility) | GA      | AWS / GCP  | Pool         | ✅    | [Link](https://www.cockroachlabs.com/docs/stable/example-apps) | 🚀    |
-| **D1 (Cloudflare)**            | SQLite                                                       | GA      | Cloudflare | HTTP         | 🚫    | [Link](https://developers.cloudflare.com/d1/get-started/)    | 🚀    |
-| **Gel** (fka EdgeDB)           | PosgreSQL + EdgeQL                                           | Early   | AWS        |              |      |                                                              |      |
-| **LiteFS**                     | SQLite                                                       | GA (v0) | Fly.io     | N/A          | ✅    | [Link](https://fly.io/docs/litefs/speedrun/)                 | 🚀    |
-| **MotherDuck**                 | DuckDB                                                       |         |            |              |      |                                                              |      |
-| **Neon**                       | PostgreSQL                                                   | GA      |            |              |      |                                                              |      |
-| **Nile**                       | PostgreSQL                                                   | Early   |            | Pool         |      | [Link](https://github.com/niledatabase/niledatabase/tree/main/examples) | 👍    |
-| **Nhost**                      | PostgreSQL + GQL                                             | GA      |            |              |      |                                                              | 👍    |
-| **Prisma**                     | Prisma ¹                                                     | GA      | Vultr      |              | ✅    | [Link](https://github.com/prisma/prisma-examples)            | 🚀    |
-| **Supabase**                   | PostgreSQL                                                   |         |            | Pool / HTTP  |      |                                                              | 🚀    |
-| **SurrealDB**                  | SurrealQL (PSQL-ish)                                         |         |            |              | ✅    | [Link](https://github.com/surrealdb/examples)                | 🚀    |
-| **Turso**                      | SQLite                                                       | GA      | ?          | Embed + HTTP | ✅    | [Link](https://github.com/tursodatabase/awesome-turso)       | 🚀    |
-| **Xata**                       | PostgreSQL                                                   | Early   |            |              |      |                                                              |      |
+|                                 | Dialect                                                      | Status  | Cloud      | Cnxn         | OSS  | Examples                                                     | Docs |
+| ------------------------------- | ------------------------------------------------------------ | ------- | ---------- | ------------ | ---- | ------------------------------------------------------------ | ---- |
+| **Aurora Serverless v2 (AWS)²** | PostgreSQL / MySQL                                           | GA      | AWS        |              |      |                                                              |      |
+| **Azure SQL Serverless**        |                                                              | GA      | Azure      |              |      |                                                              |      |
+| **CockroachDB**                 | [Postgres compat.](https://www.cockroachlabs.com/docs/stable/postgresql-compatibility) | GA      | AWS / GCP  | Pool         | ✅    | [Link](https://www.cockroachlabs.com/docs/stable/example-apps) | 🚀    |
+| **D1 (Cloudflare)**             | SQLite                                                       | GA      | Cloudflare | HTTP         | 🚫    | [Link](https://developers.cloudflare.com/d1/get-started/)    | 🚀    |
+| **Gel** (fka EdgeDB)            | PosgreSQL + EdgeQL                                           | Early   | AWS        |              |      |                                                              |      |
+| **LiteFS**                      | SQLite                                                       | GA (v0) | Fly.io     | N/A          | ✅    | [Link](https://fly.io/docs/litefs/speedrun/)                 | 🚀    |
+| **MotherDuck**                  | DuckDB                                                       |         |            |              |      |                                                              |      |
+| **Neon**                        | PostgreSQL                                                   | GA      |            |              |      |                                                              |      |
+| **Nile**                        | PostgreSQL                                                   | Early   |            | Pool         |      | [Link](https://github.com/niledatabase/niledatabase/tree/main/examples) | 👍    |
+| **Nhost**                       | PostgreSQL + GQL                                             | GA      |            |              |      |                                                              | 👍    |
+| **Prisma**                      | Prisma ¹                                                     | GA      | Vultr      |              | ✅    | [Link](https://github.com/prisma/prisma-examples)            | 🚀    |
+| **Supabase**                    | PostgreSQL                                                   |         |            | Pool / HTTP  |      |                                                              | 🚀    |
+| **SurrealDB**                   | SurrealQL (PSQL-ish)                                         |         |            |              | ✅    | [Link](https://github.com/surrealdb/examples)                | 🚀    |
+| **Turso**                       | SQLite                                                       | GA      | ?          | Embed + HTTP | ✅    | [Link](https://github.com/tursodatabase/awesome-turso)       | 🚀    |
+| **Xata**                        | PostgreSQL                                                   | Early   |            |              |      |                                                              |      |
 
 1. Prisma uses PostgreSQL but does not expose a database connection. It requires the Prisma client library.
+1. Unlike v1, Aurora Serverless v2 has a minimum and does not scale down to zero. However it is kept here since it is a common point of comparison.
 
 ## Pricing
 
@@ -43,7 +44,7 @@ Note that the "Free Plan" is intended to represent ongoing free resources i.e. n
 
 |                                              | **Free Plan**                                       | Bill Limits | **First Paid Tier**                                          |
 | -------------------------------------------- | --------------------------------------------------- | ----------- | ------------------------------------------------------------ |
-| **Aurora Serverless v2 (AWS)**               |                                                     |             |                                                              |
+| **Aurora Serverless v2 (AWS)**               | None                                                |             | $0.12 / ACU (~1 GB RAM) hour (varies by region) + $0.10 / GB-month storage + $0.20 / 1M reqs (non-optimized tier) |
 | **Azure SQL Serverless**                     |                                                     |             |                                                              |
 | **CockroachDB**                              | 10 GiB + 50M RUs / mo.                              | Yes         | $0.50 / GiB + $0.20 / 1M RUs (over free)                     |
 | **D1 (Cloudflare)**                          | 5M RR / day + 100k RW / day + 5 GB                  |             | $5 / mo for 25B RR + 50M RW + 5GB, after $0.001 / M RR + $1.00 / M RW + $0.75 / GB-mo |

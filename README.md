@@ -2,7 +2,10 @@
 
 This document provides a comparison between hosted, serverless (no cost or management to spin down to zero) providers of SQL cloud databases.
 
-PlanetScale has been removed due to their user hostile pricing changes. Render has been removed since their free plan is disabled after 30 days. Tembo has been removed since their free plan is [disabled after 14 days](https://tembo.io/docs/product/cloud/free-trial).
+* PlanetScale has been removed due to their ending of free plans.
+* Render has been removed since their free plan is disabled after 30 days.
+* Tembo has been removed since their free plan is [disabled after 14 days](https://tembo.io/docs/product/cloud/free-trial).
+* Nhost has been removed since they sporadically shut down active projects.
 
 Please join our [discussions](https://github.com/hbmartin/comparison-serverless-cloud-sql-databases/discussions) or fix/update information by [editing this doc](https://github.com/hbmartin/comparison-serverless-cloud-sql-databases/edit/main/README.md)!
 
@@ -28,7 +31,6 @@ See also the [Authentication Providers Comparison](https://github.com/hbmartin/c
 | **MotherDuck**                  | DuckDB                                                       |         |            |              |      |                                                              |      |
 | **Neon**                        | PostgreSQL                                                   | GA      |            |              |      |                                                              |      |
 | **Nile**                        | PostgreSQL                                                   | Early   |            | Pool         |      | [Link](https://github.com/niledatabase/niledatabase/tree/main/examples) | 👍    |
-| **Nhost**                       | PostgreSQL + GQL                                             | GA      |            |              |      |                                                              | 👍    |
 | **Prisma**                      | Prisma ¹                                                     | GA      | Vultr      |              | ✅    | [Link](https://github.com/prisma/prisma-examples)            | 🚀    |
 | **Supabase**                    | PostgreSQL                                                   |         |            | Pool / HTTP  |      |                                                              | 🚀    |
 | **SurrealDB**                   | SurrealQL (PSQL-ish)                                         |         |            |              | ✅    | [Link](https://github.com/surrealdb/examples)                | 🚀    |
@@ -53,7 +55,6 @@ Note that the "Free Plan" is intended to represent ongoing free resources i.e. n
 | **MotherDuck**                               |                                                     |             |                                                              |
 | **[Neon](https://neon.tech/pricing)**        | 500 MB, 190 CPU hours                               |             | $20 / mo = 10 GB, 300 CPU hours                              |
 | **[Nile](https://www.thenile.dev/pricing)**  | 1GB storage, 50M query tokens                       |             | $15 / mo = 5GB storage, 150M query tokens                    |
-| **[Nhost](https://nhost.io/pricing)**        | 1 GB storage, 5 GB egress                           |             | $25/mo = 10 GB storage, 50 GB egress + $0.20 / GB add'l storage |
 | **[Prisma](https://www.prisma.io/pricing)**  | 1 GB storage, 100k ops, 5MB response, 10s duration  | Yes         | $50/mo = 5 GB storage (+ $1.5 / GB), 100k ops (+ $8 / M), 10 MB response, 20s durtration |
 | **[Supabase](https://supabase.com/pricing)** | 500 MB, 5GB bw, 50k MAU                             |             | $25 / mo =  8GB storage, 250 GB bw + $0.125 / GB + $0.09 / GB bw |
 | **SurrealDB**                                | 1 GB storage Limited compute node size              |             |                                                              |
@@ -74,7 +75,6 @@ RUs = CPU + IOPs, mo = month, M = million, k = thousand, RR = rows read, RW = ro
 | **LiteFS**                     |                    |                |                    |                |           |
 | **MotherDuck**                 |                    |                |                    |                |           |
 | **Neon**                       |                    |                |                    |                |           |
-| **Nhost**                      |                    |                |                    |                |           |
 | **Prisma**                     |                    |                | 10                 | 60             | See above |
 | **Supabase**                   |                    |                |                    |                |           |
 | **Turso**                      | 9 GB               | 24 GB          | 500                | 10k            |           |
